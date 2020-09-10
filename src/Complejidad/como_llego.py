@@ -1,11 +1,11 @@
-import unittest
+# import unittest
 
-class BlackBox(unittest.TestCase):
-    def test_pato(self):
-        x = 321
-        y = 213
-        result = move(x, y)
-        self.assertEqual(result, 3)
+# class BlackBox(unittest.TestCase):
+#     def test_pato(self):
+#         x = 321
+#         y = 213
+#         result = move(x, y)
+#         self.assertEqual(result, 3)
 
 
 def move(i, j):
@@ -19,8 +19,8 @@ def move(i, j):
 
 
 # if __name__ == "__main__":
-n = 3 #int(input())
-ini, fin = "321", "213" #input().split()
+n = 8 #int(input())
+ini, fin = "12345678", "87654321" #input().split()
 c = 0
 if ini == fin:
     print(c)
