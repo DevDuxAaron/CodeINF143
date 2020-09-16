@@ -1,19 +1,22 @@
-# n, d = map(int, input().split())
-# while True:
-#     try:
-#         x = list(map(int, input().split()))
-#         c = 0
-#         for i in range(n-(d*2)):
-#             if x[i+d] == x[i] + d and x[i+(2*d)] == x[i] + 2:
-#                 c += 1
-#         print(c)
-#     except EOFError:
-#         break
+while True:
+    try:
+        n, d = map(int, input().split())
+        x = list(map(int, input().split()))
+        co = 0
+        for i in range(n):
+            a = x[i]
+            b = a + d
+            c = a + (2 * d)
+            if b in x and c in x:
+                co += 1
+        print(co)
+    except EOFError:
+        break
 
-x = int(input())
-for i in range(x):
-    n, a, b = map(int, input().split())
-    print(min(a, b)*n, max(a, b)*n, n+1)
+# x = int(input())
+# for i in range(x):
+#     n, a, b = map(int, input().split())
+#     print(min(a, b)*n, max(a, b)*n, n+1)
 
 # 476  386 133
 # Res 63308 183736 477

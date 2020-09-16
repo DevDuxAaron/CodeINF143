@@ -2,14 +2,10 @@ import unittest
 
 
 def fun(n, k):
-    if k < (n // 2):
-        for j in range(n - 2):
-            if (j * 2) + 1 >= k:
-                return j
+    if k <= (n // 2):
+        return (k // 2) + 1
     else:
-        for j in range(n - 2, 0, -1):
-            if (j * 2) <= k:
-                return j
+        return ((n + 1 - k)//2) + 1
 
 
 class FunBlackBox(unittest.TestCase):
@@ -35,13 +31,13 @@ class FunBlackBox(unittest.TestCase):
         n1 = 16478
         n2 = 8252
         res = fun(n1, n2)
-        self.assertEqual(res, 1252)
+        self.assertEqual(res, 4114)
 
     def test_case_5(self):
         n1 = 5322
         n2 = 268
         res = fun(n1, n2)
-        self.assertEqual(res, 4114)
+        self.assertEqual(res, 1252)
 
 
 # case = int(input())
