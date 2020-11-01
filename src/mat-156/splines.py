@@ -80,7 +80,7 @@ y1d_3 = np.interp(x_3, xi_3, yi_3)
 ysp_3 = InterpolatedUnivariateSpline(xi_3, yi_3)(x_3)
 
 # plt.plot(xi, yi, 'x', mew=2)
-plt.plot(x, y1d)
+# plt.plot(x, y1d)
 plt.plot(x, ysp)
 
 # plt.plot(xi_2, yi_2, 'g', mew=2)
